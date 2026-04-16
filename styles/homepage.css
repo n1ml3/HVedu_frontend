@@ -1,0 +1,241 @@
+:root {
+    --primary-color: #890C25;
+    --primary-dark: #6e091d;
+    --text-color: #000000;
+    --text-muted: #6c757d;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--white);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.hero-bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.col-lg-7 {
+    margin-bottom: 80px;
+}
+
+.hero-subtitle {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 26px;
+    font-family: 'Inter';
+    color: #FFFFFF;
+}
+
+.hero-subtitle i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.hero-title {
+    font-family: 'Inter';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 54px;
+    style: bold;
+}
+
+.btn-hero {
+    background-color: #890C25;
+    text-align: center;
+    font: 'Inter';
+    color: white;
+    min-width: 307px;
+    padding: 12px 56px 12px 87px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: var(--transition);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.btn-hero:hover {
+    background-color: #6e091d;
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-stats-wrapper {
+    position: relative;
+}
+
+.hero-stats {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-icon {
+    margin-right: 12px;
+}
+
+.stat-item {
+    margin-bottom: 30px;
+}
+
+.stat-number {
+    font: 'Inter';
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+.stat-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #A1A1A1;
+    border: 1px;
+    margin: 20px 0;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding: 0 60px;
+    color: #333;
+}
+
+.section-title span {
+    color: var(--primary-color);
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 3px;
+    background-color: #ffc107;
+    border-radius: 2px;
+}
+
+.section-desc {
+    max-width: 900px;
+    margin: 25px auto 0;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Feature Cards */
+.feature-card {
+    background-color: #ffffff;
+    padding: 50px 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition);
+    height: 100%;
+    border: 1px solid #f0f0f0;
+    margin-top: 40px;
+    position: relative;
+}
+
+.feature-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: #e91e63; /* Pink-ish red from design */
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
+    z-index: 2;
+}
+
+/* Decorative shape behind icon */
+.feature-icon-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e91e63;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.btn-read-more {
+    background-color: #8B0000; /* Darker red from design */
+    font: 'Inter';
+    style: medium;
+    color: var(--white);
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.btn-read-more:hover {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+}

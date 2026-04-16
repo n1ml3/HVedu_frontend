@@ -12,10 +12,6 @@
     z-index: 1000;
 }
 
-.navbar {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
 .logo-stack {
     position: relative;
     height: 45px;
@@ -59,7 +55,7 @@
 .navbar-nav .nav-link {
     color: var(--text-color);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 20px;
     position: relative;
     transition: var(--transition);
 }
@@ -114,5 +110,4 @@
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
     background-color: rgba(255, 255, 255, 0.98) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
 }
