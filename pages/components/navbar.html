@@ -1,0 +1,78 @@
+<header class="header-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <div class="logo-stack">
+                        <img src="../assets/Frame 1000002996.svg" class="logo-img-stack" alt="Vector Background">
+                    </div>
+                </a>
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../assets/Group 1.svg" alt="HVG Logo" class="logo-img me-2" style="height: 50px;">
+                </a>
+            </div>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center ms-auto">
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link px-3" href="homepage.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link px-3" href="introduce.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link px-3" href="#">Tuyển sinh</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link px-3" href="#">Đào tạo</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link px-3" href="#">Tin tức</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link px-3" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+    $(document).ready(function () {
+        // Highlight active menu item based on current page
+        var currentPath = window.location.pathname;
+        var page = currentPath.split("/").pop();
+
+        $('.navbar-nav .nav-link').each(function () {
+            var href = $(this).attr('href');
+            if (page === href || (page === '' && href === '../index.html')) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        });
+
+        // Hiệu ứng thay đổi navbar khi cuộn trang
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').addClass('navbar-scrolled');
+            } else {
+                $('.navbar').removeClass('navbar-scrolled');
+            }
+        });
+
+        // Đóng menu mobile khi nhấn vào link
+        $('.navbar-nav .nav-link').on('click', function () {
+            if ($('.navbar-collapse').hasClass('show')) {
+                $('.navbar-toggler').click();
+            }
+        });
+
+        console.log("Navbar initialized.");
+    });
+</script>

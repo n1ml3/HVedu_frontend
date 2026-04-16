@@ -4,57 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu</title>
+    <title>Giới thiệu - HV Education</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/introduce.css">
+    <!-- Navbar Styles -->
+    <link rel="stylesheet" href="../styles/components/navbar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="header-navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <div class="logo-stack">
-                        <img src="../assets/Frame 1000002996.svg" class="logo-img-stack" alt="Vector Background">
-                    </div>
-                </a>
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="../assets/Group 1.svg" alt="HVG Logo" class="logo-img me-2" style="height: 50px;">
-                </a>
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center ms-auto">
-                        <li class="nav-item mx-lg-2">
-                            <a class="nav-link px-3" href="../index.html">Trang chủ</a>
-                        </li>
-                        <li class="nav-item mx-lg-2">
-                            <a class="nav-link active px-3" aria-current="page" href="introduce.html">Giới thiệu</a>
-                        </li>
-                        <li class="nav-item mx-lg-2">
-                            <a class="nav-link px-3" href="#">Tuyển sinh</a>
-                        </li>
-                        <li class="nav-item mx-lg-2">
-                            <a class="nav-link px-3" href="#">Đào tạo</a>
-                        </li>
-                        <li class="nav-item mx-lg-2">
-                            <a class="nav-link px-3" href="#">Tin tức</a>
-                        </li>
-                        <li class="nav-item mx-lg-2">
-                            <a class="nav-link px-3" href="#">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <!-- Content will go here -->
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -63,23 +30,8 @@
 
     <script>
         $(document).ready(function () {
-            // Hiệu ứng thay đổi navbar khi cuộn trang
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 50) {
-                    $('.navbar').addClass('navbar-scrolled');
-                } else {
-                    $('.navbar').removeClass('navbar-scrolled');
-                }
-            });
-
-            // Đóng menu mobile khi nhấn vào link
-            $('.navbar-nav .nav-link').on('click', function () {
-                if ($('.navbar-collapse').hasClass('show')) {
-                    $('.navbar-toggler').click();
-                }
-            });
-
-            console.log("HVEducation Navbar initialized with jQuery.");
+            // Load Navbar
+            $("#navbar-placeholder").load("components/navbar.html");
         });
     </script>
 </body>
