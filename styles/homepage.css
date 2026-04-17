@@ -326,7 +326,7 @@
 /* Registration Section */
 .registration-container {
   background-color: #890c25;
-  border-radius: 40px;
+  border-radius: 16px;
   padding: 60px;
   color: #ffffff;
   margin-bottom: 80px;
@@ -341,22 +341,23 @@
 }
 
 .registration-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 500px;
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 661px;
   opacity: 0.9;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .registration-images {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
+
 }
 
 .registration-students-img {
   width: 100%;
   max-width: 550px;
-  display: block;
+  display: flex;
 }
 
 .registration-card {
