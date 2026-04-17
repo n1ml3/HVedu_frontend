@@ -336,7 +336,6 @@
 .registration-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 60px;
 }
 
 .registration-info {
@@ -376,20 +375,21 @@
 }
 
 .registration-form-area {
-  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  margin-top: 51px;
+  margin-right: 40px;
+  margin-bottom: 48px;
 }
 
 .registration-card {
-  background-color: #ffffff;
-  border-radius: 32px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
   padding: 45px 40px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  color: #333333;
+  color: #3F3F3F;
   position: relative;
   z-index: 3;
+  font-family: "Inter";
 }
 
 .registration-card h4 {
@@ -398,38 +398,46 @@
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 40px;
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter";
 }
 
 .reg-form-control {
-  background-color: #fdf5f6;
-  border: none;
-  border-radius: 12px;
-  padding: 14px 22px;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 12px;
+  background-color: #FFF4F2 !important;
+  font-family: 'Inter';
+  border-radius: 15px !important;
+  font-size: 14px;
+  color: #3F3F3F;
+  font-weight: 300;
+  margin-bottom: 20px;
+  border: none !important; /* Đảm bảo không có viền từ Bootstrap */
+  box-shadow: none !important; /* Loại bỏ bóng mặc định */
+}
+
+.reg-form-select{
+  font-family: 'Inter';
+  color: #3F3F3F !important;
+  font-weight: 300;
 }
 
 .reg-form-control::placeholder {
-  color: #999;
+  color: #3F3F3F;
 }
 
 .reg-btn-submit {
   background-color: #8b0c25 !important;
   color: #ffffff !important;
   width: 100%;
-  border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 16px;
   font-size: 18px;
   font-weight: 700;
   margin-top: 15px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Inter';
 }
 
 .reg-btn-submit:hover {
-  background-color: #6d091e !important;
+  background-color: #890C25;
   transform: translateY(-2px);
 }
 
