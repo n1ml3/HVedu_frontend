@@ -37,7 +37,7 @@ body {
 }
 
 /* Introduction Sections */
-.intro-section, .vision-section {
+.intro-section, .vision-section, .mission-section {
     background-color: var(--white);
 }
 
