@@ -53,7 +53,7 @@
 }
 
 .navbar-nav .nav-link {
-    color: var(--text-color);
+    color: #000000;
     font-weight: 500;
     font-size: 20px;
     position: relative;
@@ -61,12 +61,12 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--primary-color);
+    color: #000000;
 }
 
 .navbar-nav .nav-link.active {
     color: var(--primary-color) !important;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Hiệu ứng gạch chân cho active và hover */
