@@ -154,7 +154,7 @@
   content: "";
   width: 69px;
   height: 2px;
-  background: linear-gradient(to right, #d4af37, #ffd700, #d4af37);
+  background: #e8bc00;
   display: inline-block;
 }
 
@@ -223,12 +223,13 @@
 }
 
 .btn-read-more {
-  background-color: var(--primary-color);
+  background-color: #890c25;
+  font-family: "Inter";
   color: var(--white);
   padding: 12px 35px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   transition: var(--transition);
   display: inline-block;
@@ -248,3 +249,189 @@
     font-size: 1.8rem;
   }
 }
+
+/* Ngành Đào Tạo Section */
+.majors-section {
+  background-color: #fff5f7c2;
+  padding: 85px 0 100px;
+}
+
+.section-title-alt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.section-title-alt span {
+  color: #890c25;
+}
+
+.section-title-alt::before,
+.section-title-alt::after {
+  content: "";
+  height: 2px;
+  width: 69px;
+  background-color: #e8bc00; /* Gold accent */
+}
+
+.major-card {
+  position: relative;
+  height: 298px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  /* cursor: pointer; */
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+}
+
+.major-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background 0.3s ease;
+}
+
+.major-card:hover {
+  transform: translateY(-5px);
+}
+
+.major-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.major-name {
+  font-family: "Inter";
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Registration Section */
+.registration-container {
+  background-color: #890c25;
+  border-radius: 40px;
+  padding: 60px;
+  color: #ffffff;
+  margin-bottom: 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+.registration-content h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.registration-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 500px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.registration-images {
+  position: relative;
+  z-index: 1;
+}
+
+.registration-students-img {
+  width: 100%;
+  max-width: 550px;
+  display: block;
+}
+
+.registration-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+
+.registration-card h4 {
+  color: #890c25;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: "Outfit", sans-serif;
+}
+
+.reg-form-control {
+  background-color: #fff5f7 !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 12px 20px !important;
+  font-size: 15px !important;
+  color: #333 !important;
+  margin-bottom: 8px;
+}
+
+.reg-form-control::placeholder {
+  color: #999;
+}
+
+.reg-form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 12px;
+  appearance: none;
+}
+
+.reg-btn-submit {
+  background-color: #890c25 !important;
+  color: #ffffff !important;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.reg-btn-submit:hover {
+  background-color: #6d091e !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .registration-container {
+    padding: 40px 30px;
+  }
+  
+  .registration-content {
+    text-align: center;
+  }
+  
+  .registration-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .registration-card {
+    margin-top: 40px;
+  }
+}
+
