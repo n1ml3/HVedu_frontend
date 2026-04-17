@@ -271,12 +271,20 @@
   color: #890c25;
 }
 
-.section-title-alt::before,
-.section-title-alt::after {
+.section-title-alt::before{
+  margin-right: 32px;
   content: "";
   height: 2px;
   width: 69px;
-  background-color: #e8bc00; /* Gold accent */
+  background-color: #E8BC00; /* Gold accent */
+}
+
+.section-title-alt::after {
+  margin-left: 32px;
+  content: "";
+  height: 2px;
+  width: 69px;
+  background-color: #E8BC00; /* Gold accent */
 }
 
 .major-card {
