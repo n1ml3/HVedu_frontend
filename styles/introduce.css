@@ -12,4 +12,87 @@ body {
     background-color: var(--white);
 }
 
-/* Page specific styles below */
+/* Breadcrumb Styles */
+.breadcrumb-bar {
+    background-color: #F4F4F4;
+    padding: 12px 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.breadcrumb-item a {
+    font-family: 'Inter';
+    color: #444444;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.breadcrumb-item.active {
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #890C25 !important;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+/* Introduction Sections */
+.intro-section, .vision-section {
+    background-color: var(--white);
+}
+
+.section-title {
+    color: #890C25;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+.title-underline {
+    width: 120px;
+    height: 2px;
+    background-color: #DD8D45;
+    margin-bottom: 30px;
+}
+
+
+.section-body p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #242424;
+    margin-bottom: 20px;
+}
+
+.section-body strong {
+    color: #242424;
+}
+
+.image-placeholder {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+@media (max-width: 991px) {
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .intro-content {
+        text-align: center;
+    }
+    
+    .title-underline {
+        margin: 0 auto 25px;
+    }
+    
+    .intro-image-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}

@@ -109,6 +109,16 @@
     margin-bottom: 28px;
 }
 
+.footer-col2 {
+    padding-left: 60px; /* Shift to right */
+}
+
+@media (max-width: 991px) {
+    .footer-col2 {
+        padding-left: 15px;
+    }
+}
+
 .footer-links {
     list-style: none;
     padding: 0;
@@ -231,7 +241,6 @@
     line-height: 1;
     color: #26262666;
 }
-
 @media (max-width: 991px) {
     .site-footer {
         padding: 60px 0 30px;
