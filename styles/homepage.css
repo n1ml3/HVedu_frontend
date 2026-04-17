@@ -177,12 +177,11 @@
   transition: var(--transition);
   height: 100%;
   border: 1px solid #f2f2f2;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12);
 }
 
 .feature-card:hover {
