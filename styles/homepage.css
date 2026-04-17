@@ -405,10 +405,10 @@
   background-color: #FFF4F2 !important;
   font-family: 'Inter';
   border-radius: 15px !important;
-  font-size: 14px;
+  font-size: 14px !important;
   color: #3F3F3F;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-weight: 300 !important;
+  margin-bottom: 20px !important;
   border: none !important; /* Đảm bảo không có viền từ Bootstrap */
   box-shadow: none !important; /* Loại bỏ bóng mặc định */
 }
@@ -460,3 +460,153 @@
   }
 }
 
+
+/* Activities News Section */
+.activities-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.activities-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.activities-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.activities-title-wrapper span {
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #E2B23E;
+}
+
+.activities-title-wrapper h2 {
+  font-family: 'Outfit';
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.activities-title-wrapper h2 span {
+  color: #8b0c25;
+}
+
+.activities-subtitle {
+  color: #666;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.activity-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.pill-btn {
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  font-family: 'Inter';
+}
+
+.pill-btn.active {
+  background-color: #8b0c25;
+  color: #fff;
+  border-color: #8b0c25;
+}
+
+.pill-btn:hover:not(.active) {
+  border-color: #8b0c25;
+  color: #8b0c25;
+}
+
+.activity-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.activity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.activity-card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.activity-card-body {
+  padding: 24px;
+}
+
+.activity-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  height: 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.activity-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #8b0c25;
+  font-weight: 500;
+}
+
+.activity-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.activity-meta .meta-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.activity-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
