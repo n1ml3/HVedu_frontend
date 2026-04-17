@@ -327,44 +327,59 @@
 .registration-container {
   background: linear-gradient(180deg, #890C25 0%, #AD1937 100%);
   border-radius: 20px;
-  padding: 50px 40px; /* Thu nhỏ padding từ 80px xuống để tiết kiệm diện tích */
   color: #ffffff;
   overflow: visible;
   position: relative;
-  max-width: 1100px; /* Giới hạn chiều rộng tối đa để container gọn hơn */
-  margin: 0 auto; /* Đảm bảo container luôn nằm giữa trang */
+  padding: 0;
 }
 
-.registration-content {
-  position: relative;
+.registration-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
 }
 
-.registration-content h3 {
+.registration-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 0 0 40px;
+}
+
+.registration-text h3 {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   font-family: "Outfit", sans-serif;
 }
 
-.registration-content p {
+.registration-text p {
   font-size: 18px;
   line-height: 26px;
-  max-width: 661px;
-  margin-bottom: 39px;
+  max-width: 600px;
+  opacity: 0.9;
 }
 
 .registration-images {
+  margin-top: auto;
   display: flex;
-  position: relative;
-  justify-content: center;
-  width: fit-content; /* Đảm bảo hộp bao quanh chỉ vừa khít với kích thước ảnh */
-  margin: 0 auto; /* Căn giữa hộp sau khi đã thu nhỏ kích thước */
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: -6px;
+  margin-left: -50px;
 }
 
 .registration-students-img {
   width: 100%;
-  position: relative;
+  max-width: 700px;
   display: block;
+}
+
+.registration-form-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
 
 .registration-card {
