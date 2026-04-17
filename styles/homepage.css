@@ -510,7 +510,7 @@
   font-size: 18px;
   max-width: 593px;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 26px;
 }
 
 .activity-tabs {
@@ -548,16 +548,16 @@
   background: #fff;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.12);
   margin-bottom: 30px;
 }
 
 .activity-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12);
 }
 
 .activity-card-img {
@@ -572,12 +572,12 @@
 }
 
 .activity-card-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #333;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 600;
+  color: #393939;
   margin-bottom: 12px;
-  line-height: 1.4;
-  height: 50px;
+  line-height: 27px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -586,12 +586,14 @@
 }
 
 .activity-meta {
+  font-family: 'Inter';
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 7px;
   font-size: 14px;
   color: #8b0c25;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 16px;
 }
 
 .activity-meta span {
@@ -600,20 +602,11 @@
   gap: 6px;
 }
 
-.activity-meta .meta-icon {
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
-}
 
 .activity-description {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  color: #323232;
+  line-height: 23px;
 }
