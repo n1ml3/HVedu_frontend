@@ -2,7 +2,7 @@
     position: relative;
     background-color: #FFEEF2;
     padding: 80px 0 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     color: #2E2E2E;
     overflow: hidden;
 }
@@ -47,23 +47,25 @@
 }
 
 .logo-name {
-    font-family: 'Outfit', sans-serif;
-    font-size: 24px;
+    font-family: 'Inter';
+    font-size: 25px;
     font-weight: 700;
     color: #890C25;
     line-height: 1;
 }
 
 .logo-sub {
+    font-family: 'Inter';
     font-size: 14px;
+    font-weight: 400;
     color: #890C25;
 }
 
 .footer-school-name {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
     color: #890C25;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .contact-info {
@@ -79,7 +81,7 @@
 }
 
 .contact-icon {
-    width: 20px;
+    width: 22px;
     margin-top: 3px;
     object-fit: contain;
 }
@@ -88,6 +90,10 @@
     display: block;
     margin-bottom: 5px;
     font-weight: 700;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 26px;
+    color: #262626;
 }
 
 .contact-item p {
@@ -96,10 +102,11 @@
 }
 
 .footer-title {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
     color: #890C25;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .footer-links {
@@ -108,14 +115,16 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .footer-links a {
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #262626;
     text-decoration: none;
-    color: #2E2E2E;
-    transition: color 0.3s ease;
-    font-weight: 500;
 }
 
 .footer-links a:hover {
@@ -123,8 +132,12 @@
 }
 
 .newsletter-desc {
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #262626;
     margin-bottom: 25px;
-    line-height: 1.6;
 }
 
 .newsletter-form {
@@ -134,10 +147,10 @@
 }
 
 .newsletter-form input {
-    flex: 1;
+    width: 260px;
     padding: 12px 20px;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 8px;
+    border: 1px solid #26262600;
+    border-radius: 4px;
     background: #FFFFFF;
     outline: none;
     transition: border-color 0.3s ease;
@@ -148,12 +161,14 @@
 }
 
 .newsletter-form button {
-    padding: 0 25px;
+    padding: 0 21px;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: #890C25;
     color: #FFFFFF;
-    font-weight: 700;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 800;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -167,19 +182,20 @@
 }
 
 .send-icon {
-    width: 18px;
+    width: 24px;
+    height: 24px;
 }
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 16px;
 }
 
 .social-icon {
-    width: 44px;
-    height: 44px;
+    width: 28px;
+    height: 28px;
     background-color: #890C25;
-    border-radius: 8px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +205,6 @@
 
 .social-icon:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(137, 12, 37, 0.3);
 }
 
 .social-icon img {
@@ -205,14 +220,16 @@
 
 .footer-divider {
     border: 0;
-    border-top: 1px solid rgba(0,0,0,0.08);
-    margin-bottom: 25px;
+    border-top: 1px solid #2626261F;
+    margin-bottom: 20px;
 }
 
 .copyright {
-    font-size: 15px;
-    color: #888;
-    margin: 0;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #26262666;
 }
 
 @media (max-width: 991px) {
