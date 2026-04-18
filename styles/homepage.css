@@ -289,11 +289,12 @@
 
 .major-card {
   position: relative;
+  display: block;
+  text-decoration: none;
   height: 298px;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 28px;
-  /* cursor: pointer; */
   background-size: cover;
   background-position: center;
   transition: all 0.4s ease;
