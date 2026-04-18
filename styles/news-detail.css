@@ -59,6 +59,7 @@
 .sidebar-links {
   position: sticky;
   top: 20px;
+  margin-top: 135px; /* Aligns with banner top by bypassing title and meta area */
   display: flex;
   flex-direction: column;
   gap: 12px;
