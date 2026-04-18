@@ -13,23 +13,125 @@
     <link rel="stylesheet" href="../styles/components/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
-<!-- Navbar Placeholder -->
-<div id="navbar-placeholder"></div>
-<div class="breadcrumb-bar">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="homepage.html">Trang chủ</a></li>
-                <img src="../assets/Group 15.svg" alt="">
-                <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
-            </ol>
-        </nav>
-    </div>
-</div>
 
 <body>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="homepage.html">Trang chủ</a></li>
+                    <img src="../assets/Group 15.svg" alt="">
+                    <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
 
+    <main class="contact-page py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Info Cards -->
+                <div class="col-lg-5">
+                    <div class="contact-info-cards">
+                        <!-- Address Card -->
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <img src="../assets/system-uicons_location.svg" alt="">
+                            </div>
+                            <div class="info-content">
+                                <h3>Địa chỉ</h3>
+                                <p>33 Trung Kính, Cầu Giấy, Hà Nội</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <img src="../assets/Frame 1000003041.svg" alt="">
+                            </div>
+                            <div class="info-content">
+                                <h3>Số điện thoại</h3>
+                                <p>0846020704</p>
+                            </div>
+                        </div>
+
+                        <!-- Hours Card -->
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <img src="../assets/Frame 10000030410.svg" alt="">
+                            </div>
+                            <div class="info-content">
+                                <h3>Thời gian hoạt động</h3>
+                                <p>Thứ 2 - Thứ 7: 08:30 - 17:30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-container">
+                        <h2 class="form-title">Để lại lời nhắn cho chúng tôi</h2>
+                        <p class="form-subtitle">Chúng tôi sẽ phản hồi bạn một cách nhanh chóng và chuyên nghiệp để đảm
+                            bảo bạn có trải nghiệm học tập tốt nhất và được hỗ trợ một cách toàn diện.</p>
+
+                        <form action="#" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="input-group-custom">
+                                        <input type="text" class="form-control" placeholder="Họ và tên*" required>
+                                        <img src="../assets/mdi_user-outline.svg" alt="" class="input-icon">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group-custom">
+                                        <input type="email" class="form-control" placeholder="Email*" required>
+                                        <img src="../assets/mdi-light_email.svg" alt="" class="input-icon">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group-custom">
+                                        <input type="text" class="form-control" placeholder="Chủ đề">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group-custom">
+                                        <input type="tel" class="form-control" placeholder="Số điện thoại*" required>
+                                        <img src="../assets/mdi-light_phone.svg" alt="" class="input-icon">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group-custom">
+                                        <textarea class="form-control" rows="5" placeholder="Nội dung*"
+                                            required></textarea>
+                                        <img src="../assets/mage_pen.svg" alt="" class="input-icon">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-submit">
+                                        Gửi ngay <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container container py-5">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4789775071017!2d105.79828777504348!3d21.01351258063205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5f40c04bcf%3A0x380a7cb1ea9e658e!2zMiBOZy4gMiBQLiBUcnVuZyBLw61uaCwgVHJ1bmcgSG_DoCwgWcOqbiBIw7JhLCBIw6AgTuG7mWkgMTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1776482737677!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
 </body>
 <!-- Footer Placeholder -->
 <div id="footer-placeholder"></div>
