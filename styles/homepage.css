@@ -483,31 +483,42 @@
 
 @media (max-width: 991px) {
   .registration-container {
-    padding: 40px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
   }
   
   .registration-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
   
   .registration-info {
-    padding: 20px 0 0 0;
-    align-items: center;
+    display: contents;
+  }
+
+  .circle-1, .circle-2 {
+    display: none;
+  }
+
+  .registration-text {
+    order: 1;
+    padding-top: 20px;
     text-align: center;
   }
   
+  .registration-form-area {
+    order: 2;
+    margin-top: 0 ;
+    margin-right: 0 ;
+  }
+
   .registration-images {
+    order: 3;
     margin-left: 0;
     margin-bottom: 0;
-    margin-top: 20px;
-    justify-content: center;
-  }
-  
-  .registration-form-area {
     margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
+    justify-content: center;
   }
   
   .registration-content {
@@ -520,7 +531,7 @@
   }
   
   .registration-card {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 

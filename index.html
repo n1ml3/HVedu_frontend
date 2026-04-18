@@ -431,6 +431,12 @@
       $("#navbar-placeholder").load("components/navbar.html");
       // Load Footer
       $("#footer-placeholder").load("components/footer.html");
+
+      // Filter Tabs Interactivity
+      $(".activity-tabs .pill-btn").on("click", function() {
+        $(".activity-tabs .pill-btn").removeClass("active");
+        $(this).addClass("active");
+      });
     });
   </script>
 </body>
