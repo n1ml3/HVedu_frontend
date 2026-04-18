@@ -4,11 +4,11 @@
             <div class="d-flex align-items-center">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <div class="logo-stack">
-                        <img src="../assets/Frame 1000002996.svg" class="logo-img-stack" alt="Vector Background">
+                        <img src="assets/Frame 1000002996.svg" class="logo-img-stack" alt="Vector Background">
                     </div>
                 </a>
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="../assets/Group 1.svg" alt="HVG Logo" class="logo-img me-2" style="height: 50px;">
+                    <img src="assets/Group 1.svg" alt="HVG Logo" class="logo-img me-2" style="height: 50px;">
                 </a>
             </div>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
@@ -22,19 +22,19 @@
                         <a class="nav-link px-3" href="index.html">Trang chủ</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a class="nav-link px-3" href="introduce.html">Giới thiệu</a>
+                        <a class="nav-link px-3" href="pages/introduce.html">Giới thiệu</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a class="nav-link px-3" href="recuitment.html">Tuyển sinh</a>
+                        <a class="nav-link px-3" href="pages/recuitment.html">Tuyển sinh</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a class="nav-link px-3" href="train.html">Đào tạo</a>
+                        <a class="nav-link px-3" href="pages/train.html">Đào tạo</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a class="nav-link px-3" href="news.html">Tin tức</a>
+                        <a class="nav-link px-3" href="pages/news.html">Tin tức</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a class="nav-link px-3" href="contact.html">Liên hệ</a>
+                        <a class="nav-link px-3" href="pages/contact.html">Liên hệ</a>
                     </li>
                 </ul>
             </div>
@@ -44,13 +44,45 @@
 
 <script>
     $(document).ready(function () {
+        // Dynamic path resolution
+        const isRoot = !window.location.pathname.includes('/pages/');
+        const prefix = isRoot ? '' : '../';
+        
+        // Fix images
+        $('.header-navbar img').each(function() {
+            let src = $(this).attr('src');
+            if (src && !src.startsWith('http')) {
+                // Ensure we don't double prefix if already fixed manually
+                if (!src.startsWith(prefix)) {
+                    $(this).attr('src', prefix + src);
+                }
+            }
+        });
+
+        // Fix links
+        $('.header-navbar .nav-link, .header-navbar .navbar-brand').each(function() {
+            let href = $(this).attr('href');
+            if (href && !href.startsWith('http') && href !== '#') {
+                if (isRoot) {
+                    // Stay as is (e.g. index.html, pages/introduce.html)
+                } else {
+                    // We are in pages/
+                    if (href === 'index.html') {
+                        $(this).attr('href', '../index.html');
+                    } else if (href.startsWith('pages/')) {
+                        $(this).attr('href', href.replace('pages/', ''));
+                    }
+                }
+            }
+        });
+
         // Highlight active menu item based on current page
         var currentPath = window.location.pathname;
         var page = currentPath.split("/").pop();
 
         $('.navbar-nav .nav-link').each(function () {
-            var href = $(this).attr('href');
-            if (page === href || (page === '' && href === '../index.html')) {
+            var href = $(this).attr('href').split("/").pop();
+            if (page === href || (page === '' && href === 'index.html')) {
                 $(this).addClass('active');
             } else {
                 $(this).removeClass('active');
