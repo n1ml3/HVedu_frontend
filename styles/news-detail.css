@@ -52,14 +52,8 @@
   margin-bottom: 8px;
 }
 
-/* Reusing sidebar styles from news.css if needed, 
-   but since homepage.css/news.css are included, 
-   most should work. Adding specific overrides here. */
-
 .sidebar-links {
-  position: sticky;
-  top: 20px;
-  margin-top: 135px; /* Aligns with banner top by bypassing title and meta area */
+  margin-top: 125px; 
   display: flex;
   flex-direction: column;
   gap: 12px;
