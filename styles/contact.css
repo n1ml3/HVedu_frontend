@@ -1,4 +1,5 @@
 :root {
+  font-family: 'Inter';
   --primary-color: #890C25;
   --text-dark: #333333;
   --transition: all 0.3s ease;

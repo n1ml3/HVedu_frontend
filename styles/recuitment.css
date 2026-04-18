@@ -1,4 +1,8 @@
 /* Activities News Section */
+:root {
+  font-family: 'Inter';
+}
+
 .recuitment-act {
   padding: 44px 0;
   background-color: #FBFBFB;

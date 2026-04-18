@@ -1,3 +1,7 @@
+:root {
+  font-family: 'Inter';
+}
+
 .news-detail-content {
   background-color: #ffffff;
 }
@@ -37,8 +41,10 @@
 }
 
 .news-main-image img {
-    width: 941.68px;
-    height: 612px;
+    width: 100%;
+    height: auto;
+    max-height: 612px;
+    object-fit: cover;
 }
 
 .news-text-content {
