@@ -444,8 +444,12 @@
   color: #3F3F3F;
   font-weight: 300 !important;
   margin-bottom: 20px !important;
-  border: none !important; /* Đảm bảo không có viền từ Bootstrap */
-  box-shadow: none !important; /* Loại bỏ bóng mặc định */
+  border: none !important; 
+  box-shadow: none !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  padding-left: 20 !important;
+  padding-right: 326 !important;
 }
 
 .reg-form-select{
