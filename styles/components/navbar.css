@@ -1,7 +1,6 @@
 :root {
     --primary-color: #890C25;
     --text-color: #000000;
-    --gray-light: #f8f9fa;
     --white: #ffffff;
     --transition: all 0.3s ease;
 }
@@ -9,7 +8,7 @@
 .header-navbar {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .logo-stack {
