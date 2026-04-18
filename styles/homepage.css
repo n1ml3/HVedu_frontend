@@ -483,7 +483,31 @@
 
 @media (max-width: 991px) {
   .registration-container {
-    padding: 40px 30px;
+    padding: 40px 20px;
+  }
+  
+  .registration-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .registration-info {
+    padding: 20px 0 0 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .registration-images {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .registration-form-area {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   
   .registration-content {
@@ -496,7 +520,7 @@
   }
   
   .registration-card {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -657,4 +681,66 @@
   font-weight: 500;
   border-radius: 20px;
   border-color: #890C25;
+}
+
+/* ---------------------------------
+   Responsive Styles Added 
+--------------------------------- */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .feature-card, .major-card {
+    padding-top: 100px;
+  }
+  .major-card {
+    height: 350px;
+  }
+  .stat-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .stat-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .hero-subtitle {
+    justify-content: center;
+    font-size: 14px;
+  }
+  .col-lg-7 {
+    text-align: center;
+  }
+  .btn-hero {
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    padding: 15px;
+  }
+  .hero-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .stat-number {
+    font-size: 32px;
+  }
+  .section-title {
+    font-size: 1.5rem !important;
+    text-align: center;
+    justify-content: center;
+  }
+  .section-desc {
+    font-size: 14px;
+    text-align: center;
+  }
 }

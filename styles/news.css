@@ -200,5 +200,11 @@ body {
 @media (max-width: 767px) {
   .news-img {
     height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .news-title {
+    font-size: 1.25rem;
+    margin-top: 15px;
   }
 }

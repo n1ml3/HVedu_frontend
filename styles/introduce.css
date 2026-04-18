@@ -101,3 +101,13 @@ body {
         margin: 0 auto;
     }
 }
+
+@media (max-width: 768px) {
+    .intro-vision-box {
+        padding: 30px 20px;
+        margin-top: 20px;
+    }
+    .intro-goals {
+        margin-bottom: 20px;
+    }
+}
