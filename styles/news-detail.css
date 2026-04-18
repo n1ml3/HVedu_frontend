@@ -1,0 +1,110 @@
+.news-detail-content {
+  background-color: #ffffff;
+}
+
+.news-detail-title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.news-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #890C25;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meta-item img {
+  width: 16px;
+  height: 16px;
+}
+
+.meta-separator {
+  color: #dee2e6;
+}
+
+.news-main-image img {
+    width: 941.68px;
+    height: 612px;
+}
+
+.news-text-content {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.news-text-content p {
+  margin-bottom: 8px;
+}
+
+/* Reusing sidebar styles from news.css if needed, 
+   but since homepage.css/news.css are included, 
+   most should work. Adding specific overrides here. */
+
+.sidebar-links {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: #ffffff;
+  border: 1px solid #d3989c; /* Lighter version of primary or per design */
+  border-radius: 100px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.sidebar-item:hover {
+  background-color: var(--primary-color, #890c25);
+  color: white;
+  border-color: var(--primary-color, #890c25);
+  transform: translateX(5px);
+}
+
+.sidebar-item .icon-wrapper {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-item img {
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .news-detail-title {
+    font-size: 24px;
+  }
+  
+  .sidebar-links {
+    margin-top: 40px;
+    position: static;
+  }
+}
