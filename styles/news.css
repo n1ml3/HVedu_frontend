@@ -71,15 +71,16 @@ body {
 
 .news-content {
   padding: 24px;
+  max-width: 908px;
 }
 
 .news-title {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 15px;
-  line-height: 1.4;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #393939;
+  margin-bottom: 39px;
   transition: var(--transition);
 }
 
@@ -123,21 +124,25 @@ body {
 .sidebar-links {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 24px;
+  margin-left: 63px;
 }
 
 .sidebar-item {
+  gap: 20px;
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 12px 20px;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 40px;
   background-color: #fff;
-  border: 1.5px solid #E8BC00;
-  border-radius: 50px;
+  border: 1px solid #890C25;
+  border-radius: 25px;
   text-decoration: none !important;
-  color: #333;
-  font-weight: 600;
-  font-size: 16px;
+  color: #890C25;
+  font-weight: 500;
+  font-size: 20px;
   transition: var(--transition);
 }
 
