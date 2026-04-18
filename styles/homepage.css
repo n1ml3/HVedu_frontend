@@ -336,9 +336,35 @@
   background: linear-gradient(180deg, #890C25 0%, #AD1937 100%);
   border-radius: 20px;
   color: #ffffff;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   padding: 0;
+}
+
+/* Hình tròn lớn - viền mờ */
+.circle-1 {
+  position: absolute;
+  background-color: #9c273e;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-125%, -30%);
+  z-index: 0; /* sau ảnh */
+}
+
+/* Hình tròn nhỏ hơn - fill mờ */
+.circle-2 {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  border: 2px solid #FF89A14D;
+  top: 45%;
+  left: 45%;
+  z-index: 0;
 }
 
 .registration-grid {
@@ -374,6 +400,7 @@
   align-items: flex-end;
   margin-bottom: -6px;
   margin-left: -50px;
+  z-index: 1;
 }
 
 .registration-students-img {
