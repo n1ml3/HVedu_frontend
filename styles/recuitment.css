@@ -12,3 +12,54 @@
   padding: 48px;
 }
 
+/* Responsive Styles for Recruitment Page */
+@media (max-width: 991px) {
+  .recuitment-train {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recuitment-train {
+    padding: 30px 15px;
+  }
+  
+  .recuitment-act {
+    padding: 30px 0;
+  }
+
+  /* Fix overflowing titles with lines */
+  .activities-title, .section-title-alt {
+    font-size: 24px;
+    white-space: normal;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+
+  /* Ensure registration form and texts look good on mobile */
+  .registration-text h3 {
+    font-size: 28px;
+  }
+  
+  .registration-card {
+    padding: 30px 20px;
+  }
+  
+  .registration-card h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  
+  .major-card {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .activities-title, .section-title-alt {
+    font-size: 20px;
+  }
+}
