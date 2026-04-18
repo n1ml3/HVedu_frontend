@@ -41,6 +41,10 @@ body {
     background-color: var(--white);
 }
 
+.title-intro {
+    margin-top: 30px;
+}
+
 .introduce-title {
     color: #890C25;
     font-family: 'Inter';
