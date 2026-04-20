@@ -58,6 +58,7 @@ body {
     font-weight: 500;
 }
 
+/*Mobile device */
 @media (max-width: 991.98px) {
     .navbar-nav {
         padding: 1rem 0;
@@ -79,6 +80,19 @@ body {
         background-color: var(--gray-light);
         border-radius: 8px;
     }
+
+    .logo-stack {
+        width: 20px;
+    }
+
+    .logo-img-stack {
+        width: 40px;
+        height: auto;
+    }
+
+    .logo-img, .me-2 {
+        width: 150px;
+    }
 }
 
 .navbar-scrolled {
@@ -87,15 +101,9 @@ body {
     background-color: rgba(255, 255, 255, 0.98) !important;
 }
 
-@media (max-width: 576px) {
-    .logo-stack {
-        width: 35px;
-        height: 35px;
-    }
-    .brand-name {
-        font-size: 1.25rem !important;
-    }
-    .brand-sub {
-        font-size: 0.8rem;
+/*1024 screen */
+@media (max-width: 1024px) {
+    .navbar-nav .nav-link {
+        font-size: 15px !important;
     }
 }
