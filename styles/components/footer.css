@@ -1,12 +1,12 @@
-:root {
-    font-family: 'Inter';
+body {
+    font-family: 'Inter', sans-serif;
 }
 
 .site-footer {
     position: relative;
     background-color: #FFEEF2;
     padding: 80px 0 20px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     color: #2E2E2E;
     overflow: hidden;
 }
@@ -51,7 +51,7 @@
 }
 
 .logo-name {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 25px;
     font-weight: 700;
     color: #890C25;
@@ -59,7 +59,7 @@
 }
 
 .logo-sub {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #890C25;
@@ -94,7 +94,7 @@
     display: block;
     margin-bottom: 5px;
     font-weight: 700;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 26px;
     color: #262626;
@@ -133,7 +133,7 @@
 }
 
 .footer-links a {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -146,7 +146,7 @@
 }
 
 .newsletter-desc {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -180,7 +180,7 @@
     border-radius: 4px;
     background-color: #890C25;
     color: #FFFFFF;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 800;
     display: flex;
@@ -239,7 +239,7 @@
 }
 
 .copyright {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1;

@@ -1,3 +1,7 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
 :root {
   --primary-color: #890c25;
   --primary-dark: #6e091d;
@@ -8,10 +12,6 @@
   --card-shadow: 0 1px 10px rgba(0, 0, 0, 0.12);
   --sidebar-bg: #fff;
   --accent-gold: #e8bc00;
-}
-
-body {
-  font-family: "Inter";
 }
 
 /* News Page Content */
@@ -60,7 +60,7 @@ body {
 }
 
 .news-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 27px;

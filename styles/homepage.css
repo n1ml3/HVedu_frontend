@@ -37,7 +37,7 @@
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 26px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: #ffffff;
 }
 
@@ -47,18 +47,17 @@
 }
 
 .hero-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 56px;
   font-weight: 700;
   line-height: 120%;
   margin-bottom: 54px;
-  style: bold;
 }
 
 .btn-hero {
   background-color: #890c25;
   text-align: center;
-  font: "Inter";
+  font-family: "Inter", sans-serif;
   color: white;
   min-width: 307px;
   padding: 12px 56px 12px 56px;
@@ -70,7 +69,6 @@
   border: none;
   display: inline-flex;
   align-items: center;
-  style: normal;
   gap: 17px;
 }
 
@@ -99,7 +97,7 @@
 }
 
 .stat-number {
-  font: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 700;
   display: block;
@@ -133,7 +131,7 @@
 }
 
 .section-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 700;
   display: flex;
@@ -159,7 +157,7 @@
 }
 
 .section-desc {
-  font: "Inter";
+  font-family: "Inter", sans-serif;
   max-width: 1194px;
   margin: 0 auto;
   color: #404040;
@@ -203,7 +201,7 @@
 }
 
 .feature-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 28px;
@@ -224,7 +222,7 @@
 
 .btn-read-more {
   background-color: #890c25;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: var(--white);
   padding: 12px 35px;
   border-radius: 10px;
@@ -323,7 +321,7 @@
 }
 
 .major-name {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   font-size: 24px;
   font-weight: 700;
@@ -384,7 +382,7 @@
   font-size: 40px;
   font-weight: 700;
   /* margin-bottom: 24px; */
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .registration-text p {
@@ -434,12 +432,12 @@
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 40px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 
 .reg-form-control {
   background-color: #FFF4F2 !important;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   border-radius: 15px !important;
   font-size: 14px !important;
   color: #3F3F3F;
@@ -454,7 +452,7 @@
 }
 
 .reg-form-select{
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   color: #3F3F3F !important;
   font-weight: 300;
 }
@@ -473,7 +471,7 @@
   font-weight: 700;
   margin-top: 15px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
 }
 
 .reg-btn-submit:hover {
@@ -552,7 +550,7 @@
   align-items: center;
   justify-content: center;
   gap: 7px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 700;
   margin: 0 0 15px 0;
@@ -605,7 +603,7 @@
   background: #fff;
   color: #333;
   cursor: pointer;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
 }
 
 .pill-btn.active {
@@ -647,7 +645,7 @@
 }
 
 .activity-card-title {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #393939;
@@ -661,7 +659,7 @@
 }
 
 .activity-meta {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   display: flex;
   gap: 7px;
   font-size: 14px;
@@ -679,7 +677,7 @@
 
 
 .activity-description {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #323232;
@@ -687,7 +685,7 @@
 }
 
 .pill-btn {
-  font-size: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 500;
   border-radius: 20px;

@@ -1,16 +1,15 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
 :root {
-    font-family: 'Inter';
     --primary-color: #890C25;
     --text-color: #000000;
     --gray-light: #f8f9fa;
     --white: #ffffff;
     --transition: all 0.3s ease;
-}
-
-body {
-    font-family: 'Inter';
-    color: var(--text-color);
-    background-color: var(--white);
 }
 
 /* Breadcrumb Styles */
@@ -21,7 +20,7 @@ body {
 }
 
 .breadcrumb-item a {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     color: #444444;
     text-decoration: none;
     font-weight: 400;
@@ -30,7 +29,7 @@ body {
 }
 
 .breadcrumb-item.active {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #890C25 !important;
     font-weight: 700;
@@ -48,7 +47,7 @@ body {
 
 .introduce-title {
     color: #890C25;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 22px;
@@ -64,7 +63,7 @@ body {
 
 
 .section-body p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
