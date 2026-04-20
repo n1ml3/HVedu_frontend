@@ -239,15 +239,6 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  .section-title {
-    font-size: 1.8rem;
-  }
-}
-
 /* Ngành Đào Tạo Section */
 .majors-section {
   background-color: #fff5f7c2;
@@ -447,8 +438,8 @@
   box-shadow: none !important;
   padding-top: 14px !important;
   padding-bottom: 14px !important;
-  padding-left: 20 !important;
-  padding-right: 326 !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .reg-form-select{
@@ -636,7 +627,7 @@
 .activity-card-img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -696,15 +687,108 @@
    Responsive Styles Added 
 --------------------------------- */
 @media (max-width: 991px) {
-  .hero-title {
-    font-size: 3rem;
-    margin-bottom: 30px;
+  .hero-section {
+    min-height: 80vh !important;
+    display: flex;
+    align-items: center; /* Center content vertically on tablets */
   }
+
+  .col-lg-7 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    z-index: 2;
+  }
+
+  .btn-hero {
+    padding: 12px 32px !important;
+    font-size: 18px !important;
+    min-width: unset !important;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .hero-title, .h1 {
+    font-size: 42px !important; /* Fixed massive 300px bug */
+    margin-bottom: 24px;
+  }
+
+  .hero-stats {
+    margin-top: 20px !important;
+  }
+  .stat-label, .stat-number {
+    font-size: 20px !important;
+  }
+
+  .hero-bg-img {
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .why-choose-us {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .section-head {
+    margin-bottom: 20px;
+  }
+
+  .section-desc {
+    margin-bottom: 20px;
+  }
+
   .feature-card, .major-card {
-    padding-top: 100px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 350px
   }
+
+  .feature-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+
+  .feature-text {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+
+  .btn-read-more {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+
+  .img-fluid {
+    width: 50%;
+    height: auto;
+  }
+
+  .feature-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .majors-section {
+    padding-top: 20px;
+    padding-block: 20px;
+  }
+
+  .section-title-alt {
+    font-family: 'Inter';
+    font-size: 24px;
+  }
+
   .major-card {
-    height: 350px;
+    height: 200px;
   }
   .stat-item {
     display: inline-block;
@@ -713,11 +797,29 @@
   .stat-divider {
     display: none;
   }
+
+  .registration-section {
+    padding-bottom: 10px;
+  }
+
+  .registration-text {
+    text-align: center;
+  }
+
+  .registration-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .activities-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem !important;
+    font-size: 38px !important;
     text-align: center;
   }
   .hero-subtitle {
