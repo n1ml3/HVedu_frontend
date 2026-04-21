@@ -327,3 +327,9 @@ body {
         text-align: center;
     }
 }
+
+@media (max-width: 1024px) {
+    .newsletter-form input {
+        width: 100%;
+    }
+}

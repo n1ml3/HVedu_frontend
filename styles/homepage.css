@@ -828,6 +828,10 @@ html, body {
     padding-bottom: 20px;
   }
 
+  .pill-btn, .pill-btn.active {
+    border-radius: 10px;
+  }
+
   /* Hide decorative yellow lines on responsive views */
   .section-title::before, .section-title::after,
   .section-title-alt::before, .section-title-alt::after,
