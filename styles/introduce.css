@@ -83,19 +83,27 @@ body {
 
 
 @media (max-width: 991px) {
-    .section-title {
+    .introduce-title {
         font-size: 28px;
+        line-height: normal;
+        text-align: center;
     }
-    
+
+    .section-body p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .title-underline {
+        margin: 0 auto 25px;
+    }
+
     .intro-content {
         margin-top: 10px !important;
         text-align: center;
     }
-    
-    .title-underline {
-        margin: 0 auto 25px;
-    }
-    
+
     .intro-image-container {
         max-width: 500px;
         margin: 0 auto;
@@ -103,11 +111,65 @@ body {
 }
 
 @media (max-width: 768px) {
-    .intro-vision-box {
-        padding: 30px 20px;
-        margin-top: 20px;
+    .introduce-title {
+        font-size: 24px;
     }
-    .intro-goals {
-        margin-bottom: 20px;
+
+    .section-body p {
+        font-size: 14px;
+    }
+
+    /* Remove decorative yellow lines on smaller screens as requested */
+    .title-underline {
+        display: none !important;
+    }
+
+    .intro-section, .vision-section, .mission-section {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .breadcrumb-item a, .breadcrumb-item.active {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 427px) {
+    .introduce-title {
+        font-size: 20px;
+    }
+
+    .section-body p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .intro-section, .vision-section, .mission-section {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 376px) {
+    .introduce-title {
+        font-size: 18px;
+    }
+
+    .section-body p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 321px) {
+    .introduce-title {
+        font-size: 16px;
+    }
+
+    .section-body p {
+        font-size: 12px;
+    }
+
+    .breadcrumb-item a, .breadcrumb-item.active {
+        font-size: 12px;
     }
 }
