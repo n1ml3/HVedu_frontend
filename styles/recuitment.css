@@ -45,19 +45,7 @@ body {
   }
 
 
-  /* Ensure registration form and texts look good on mobile */
-  .registration-text h3 {
-    font-size: 28px;
-  }
-  
-  .registration-card {
-    padding: 30px 20px;
-  }
-  
-  .registration-card h4 {
-    font-size: 22px;
-    margin-bottom: 25px;
-  }
+  /* Standardized registration-section padding handled by the USER in line 24-26 */
   
   .major-card {
     height: 250px;
