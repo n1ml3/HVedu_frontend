@@ -5,3 +5,55 @@ body {
 .trainpage-train {
     padding-top: 48px;
 }
+
+/* Responsive Styles for Training Page */
+@media (max-width: 991px) {
+  .trainpage-train {
+    padding-top: 40px;
+  }
+
+  .training-section {
+    padding-top: 50px;
+    padding-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .trainpage-train {
+    padding-top: 30px;
+  }
+  
+  .section-title-alt {
+    font-size: 24px;
+    white-space: normal;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .training-section {
+    padding-top: 30px;
+    padding-bottom: 30px !important;
+  }
+
+  .training-content {
+    margin-top: 10px !important;
+    text-align: center;
+  }
+
+  .training-image-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .trainpage-train{
+    padding-top: 20px !important;
+  }
+
+  .section-title-alt {
+    font-size: 20px;
+    margin-bottom: 0px !important;
+  }
+}
