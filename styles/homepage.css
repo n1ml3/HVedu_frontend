@@ -475,6 +475,24 @@ html, body {
   transform: translateY(-2px);
 }
 
+@media (max-width: 1024px) {
+  .circle-1, .circle-2 {
+    display: none;
+  }
+
+  .registration-card {
+    padding: 20px !important;
+  }
+
+  .registration-grid {
+    column-gap: 50px;
+  }
+
+  .registration-form-area {
+    margin-right: 20px;
+  }
+}
+
 @media (max-width: 991px) {
   .registration-container {
     padding-left: 10px;
@@ -489,10 +507,6 @@ html, body {
   
   .registration-info {
     display: contents;
-  }
-
-  .circle-1, .circle-2 {
-    display: none;
   }
 
   .registration-text {
