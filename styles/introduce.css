@@ -124,7 +124,7 @@ body {
         display: none !important;
     }
 
-    .intro-section, .vision-section, .mission-section {
+    .intro-section, .vision-section, .mission-section, .why-choose-us {
         padding-top: 30px !important;
         padding-bottom: 30px !important;
     }
@@ -144,9 +144,14 @@ body {
         margin-bottom: 15px;
     }
 
-    .intro-section, .vision-section, .mission-section {
+    .intro-section, .vision-section, .mission-section, .why-choose-us {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
+    }
+
+    .feature-cards-row {
+        margin-top: 20px !important;
+        padding-top: 0 !important;
     }
 }
 
