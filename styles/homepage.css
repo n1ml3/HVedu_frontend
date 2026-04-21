@@ -777,7 +777,7 @@ html, body {
 
   .majors-section {
     padding-top: 20px;
-    padding-block: 20px;
+    padding-block: 10px;
   }
 
   .section-title-alt {
@@ -901,6 +901,35 @@ html, body {
     font-family: 'Inter';
     font-size: 20px !important;
     margin-bottom: 10px;
+  }
+  .major-card {
+    margin-bottom: 10px !important;
+  }
+
+  .registration-title {
+    font-family: 'Inter';
+    font-size: 20px !important;
+  }
+  .registration-desc {
+    font-family: 'Inter';
+    font-size: 14px !important;
+  }
+  .form-title {
+    font-family: 'Inter';
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .registration-card {
+    padding: 20px !important;
+  }
+
+  .reg-form-control {
+    font-size: 14px !important;
+  }
+
+  .btn-reg {
+    font-size: 14px !important;
   }
 }
 
@@ -1062,6 +1091,14 @@ html, body {
     font-family: 'Inter';
     font-size: 18px !important;
     margin-bottom: 10px;
+  }
+
+  .registration-card {
+    padding: 10px !important;
+  }
+
+  .reg-form-control {
+    font-size: 12px !important;
   }
 }
 
