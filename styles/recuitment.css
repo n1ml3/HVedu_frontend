@@ -11,10 +11,18 @@ body {
   padding: 48px;
 }
 
+.registration-section {
+    padding-bottom: 85px;
+}
+
 /* Responsive Styles for Recruitment Page */
 @media (max-width: 991px) {
   .recuitment-train {
     padding: 40px 20px;
+  }
+
+  .registration-section {
+    padding-bottom: 30px !important;
   }
 }
 
