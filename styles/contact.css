@@ -9,7 +9,7 @@ body {
 }
 
 .contact-page {
-  background-color: #ffffff;
+  margin-top: 63px;
 }
 
 /* Info Cards */
@@ -43,6 +43,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.info-icon img {
+  max-width: 100%;
+  height: auto;
 }
 
 .info-content h3 {
@@ -170,10 +175,39 @@ body {
   height: 641px;
 }
 
+@media (max-width: 1024px) {
+  .contact-page {
+    margin-top: 10px;
+  }
+
+  .info-content h3 {
+    font-size: 20px;
+  }
+
+  .info-content p {
+    font-size: 16px;
+  }
+
+  .info-icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .map-container {
+    height: auto !important;
+    padding: 0px !important;
+    margin-bottom: 50px !important;
+  }
+}
+
 @media (max-width: 991px) {
   .contact-form-container {
-    padding: 30px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -185,9 +219,34 @@ body {
     align-items: center;
   }
   .info-icon {
-    margin-bottom: 15px;
+    width: 40px !important;
+    height: 40px !important;
   }
-  .contact-map-container iframe {
-    height: 400px;
+  .map {
+    aspect-ratio: 1 / 1;
+    height: auto !important;
+    border-radius: 10px;
+  }
+  .map-container {
+    padding: 0 15px !important;
+    margin-top: -30px !important;
+  }
+  .contact-info-cards{
+    gap: 20px;
+  }
+}
+
+@media (max-width: 321px) {
+  .info-icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .info-content h3 {
+    font-size: 16px;
+  }
+
+  .info-content p {
+    font-size: 14px;
   }
 }
