@@ -858,7 +858,7 @@ html, body {
   }
   .hero-title {
     color: #FFFFFF;
-    font-size: 16px !important;
+    font-size: 18px !important;
     padding: auto;
   }
   .hero-subtitle {
@@ -1006,7 +1006,7 @@ html, body {
 
   .hero-title {
     color: #FFFFFF;
-    font-size: 14px !important;
+    font-size: 16px !important;
     margin-bottom: 10px !important;
     padding: auto;
   }
@@ -1122,15 +1122,16 @@ html, body {
 
 @media (max-width: 321px) {
   .hero-bg-img {
-    object-fit: contain !important;
+    object-fit: cover !important;
   }
   .hero-section .col-lg-7{
-    max-height: 90px !important;
-    padding-left: 10px !important;
+    padding-left: 12px !important;
+    padding-top: 0px !important;
+    margin-bottom: 20px !important;
   }
   .hero-section .col-lg-4{
-    max-height: 90px !important;
-    padding-left: 10px !important;
+    padding-left: 12px !important;
+    margin-top: 10px !important;
   }
   .hero-section {
     min-height: auto !important; 
@@ -1138,7 +1139,7 @@ html, body {
   }
   .hero-title {
     color: #FFFFFF;
-    font-size: 16px !important;
+    font-size: 14px !important;
     padding: auto;
   }
   .hero-subtitle {
