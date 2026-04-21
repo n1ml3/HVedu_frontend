@@ -262,32 +262,37 @@ body {
 }
 
 @media (max-width: 767px) {
+    .site-footer {
+        padding-top: 20px !important;
+        padding-bottom: 0px !important  ;
+    }
     .site-footer::before {
         display: none;
+    }
+    .footer-logo {
+        width: 50px;
+        height: auto;
     }
     
     .footer-logo-wrapper {
         justify-content: center;
-        margin-bottom: 30px;
     }
     
-    .logo-text, .footer-school-name, .contact-item strong, .contact-item p, .footer-title, .newsletter-desc {
+    .logo-text, .newsletter-desc {
+        padding-top: 20px;
         text-align: center;
+        font-size: 16px;
     }
-    
-    .contact-info {
-        align-items: center;
-    }
-    
-    .contact-item {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .footer-col2 {
-        padding-left: 0;
+
+    .footer-school-name {
+        font-size: 16px;
         text-align: center;
+
+    }
+
+    .footer-title{
+        text-align: center;
+        margin-bottom: 10px;
     }
     
     .footer-links {
