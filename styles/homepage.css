@@ -896,6 +896,12 @@ html, body {
   .feature-text {
     margin-bottom: 10px;
   }
+  
+  .section-title-alt{
+    font-family: 'Inter';
+    font-size: 20px !important;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -972,6 +978,12 @@ html, body {
     height: auto !important;
     padding-bottom: 30px !important;
   }
+
+  .section-title-alt{
+    font-family: 'Inter';
+    font-size: 18px !important;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 321px) {
@@ -1044,6 +1056,12 @@ html, body {
   .feature-card {
     height: auto !important;
     padding-bottom: 30px !important;
+  }
+
+  .section-title-alt{
+    font-family: 'Inter';
+    font-size: 18px !important;
+    margin-bottom: 10px;
   }
 }
 
