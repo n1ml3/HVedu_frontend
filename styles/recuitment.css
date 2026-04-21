@@ -31,8 +31,16 @@ body {
     padding: 30px 15px;
   }
   
+  .activities-title {
+    font-size: 24px !important;
+  }
+  
   .recuitment-act {
     padding: 30px 0;
+  }
+
+  .activities-header {
+    margin-bottom: 10px !important;
   }
 
   /* Fix overflowing titles with lines */
@@ -54,7 +62,13 @@ body {
 }
 
 @media (max-width: 576px) {
+  .recuitment-act{
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+  }
+
   .activities-title, .section-title-alt {
     font-size: 20px;
+    margin-bottom: 0px !important;
   }
 }
