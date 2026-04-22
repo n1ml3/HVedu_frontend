@@ -139,7 +139,6 @@ html, body {
   font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 700;
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 11px;
@@ -154,6 +153,7 @@ html, body {
 
 .section-title::before,
 .section-title::after {
+  margin-bottom: 10px;
   content: "";
   width: 69px;
   height: 2px;
@@ -842,15 +842,15 @@ html, body {
 
 @media (max-width: 427px) {
   .hero-bg-img {
-    object-fit: contain !important;
+    object-fit: cover !important;
   }
   .hero-section .col-lg-7{
     max-height: 90px !important;
-    padding-left: 10px !important;
+    padding-left: 20px !important;
   }
   .hero-section .col-lg-4{
     max-height: 90px !important;
-    padding-left: 10px !important;
+    padding-left: 20px !important;
   }
   .hero-section {
     min-height: auto !important; 
@@ -891,7 +891,11 @@ html, body {
 
   .why-choose-us{
     margin-top: 10px !important;
-    padding-top: 10px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .section-head {
+    margin-bottom: 10px !important;
   }
 
   .section-title{
@@ -950,6 +954,14 @@ html, body {
     font-size: 14px !important;
   }
 
+  .activities-header {
+    margin-bottom: 10px;
+  }
+
+  .majors-section {
+    padding-top: 30px;
+  }
+
   /* Activities Section Responsive */
   .activities-title {
     font-size: 20px !important;
@@ -990,7 +1002,7 @@ html, body {
 
 @media (max-width: 376px) {
   .hero-bg-img {
-    object-fit: contain !important;
+    object-fit: cover !important;
   }
   .hero-section .col-lg-7{
     max-height: 90px !important;
@@ -1258,10 +1270,3 @@ html, body {
     height: auto !important;
   }
 }
-
-  /* Hide decorative yellow lines on responsive views */
-  .section-title::before, .section-title::after,
-  .section-title-alt::before, .section-title-alt::after,
-  .activities-title::before, .activities-title::after {
-    display: none !important;
-  }
