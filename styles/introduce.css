@@ -175,6 +175,10 @@ body {
         margin-top: 20px !important;
         padding-top: 0 !important;
     }
+
+    .feature-cards-row .mb-5 {
+        margin-bottom: 20px !important;
+    }
 }
 
 @media (max-width: 376px) {
