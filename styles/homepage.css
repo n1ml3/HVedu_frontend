@@ -1136,15 +1136,6 @@ html, body {
   .hero-bg-img {
     object-fit: cover !important;
   }
-  .hero-section .col-lg-7{
-    padding-left: 12px !important;
-    padding-top: 0px !important;
-    margin-bottom: 20px !important;
-  }
-  .hero-section .col-lg-4{
-    padding-left: 12px !important;
-    margin-top: 10px !important;
-  }
   .hero-section {
     min-height: auto !important; 
     height: auto !important;

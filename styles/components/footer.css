@@ -312,10 +312,14 @@ body {
         padding-top: 10px;
         margin-bottom: 10px;
     }
+
+    .footer-title {
+        text-align: left !important;
+    }
     
     .footer-links {
         font-size: 14px;
-        align-items: center;
+        align-items: left;
     }
     
     .social-links {

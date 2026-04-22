@@ -59,12 +59,7 @@ body {
 }
 
 /*Mobile device */
-@media (max-width: 991.98px) {
-    
-    .navbar-nav .nav-link::after {
-        display: none;
-    }
-    
+@media (max-width: 991.98px) { 
     .nav-item {
         width: 100%;
         text-align: left;
