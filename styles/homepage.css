@@ -1007,6 +1007,9 @@ html, body {
   .hero-section .col-lg-7{
     margin-bottom: 30px !important;
   }
+   .hero-section .col-lg-4{
+    padding-bottom: 20px !important;
+  }
 
   .hero-title {
     color: #FFFFFF;
@@ -1033,12 +1036,8 @@ html, body {
     width: 13px !important;
     height: 13px !important;
   }
-  .hero-stat{
-    width:fit-content;
-    height:fit-content;
-  }
   .stat-item{
-    margin-left: 2px !important;
+    margin: 2px !important;
   }
   .stat-number{
     font-size: 14px !important;

@@ -96,7 +96,7 @@
                 </div>
 
                 <!-- Sidebar -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 sidebar-column">
                     <div class="sidebar-links">
                         <a href="#" class="sidebar-item">
                             <div class="icon-wrapper">
@@ -196,8 +196,13 @@
         </section>
     </main>
 </body>
-<!-- Footer Placeholder -->
-<div id="footer-placeholder"></div>
+    <button class="sidebar-toggle-btn">
+        <i class="fas fa-list"></i>
+    </button>
+    <div class="sidebar-overlay"></div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -210,6 +215,21 @@
         $("#navbar-placeholder").load("../components/navbar.html");
         // Load Footer
         $("#footer-placeholder").load("../components/footer.html");
+
+        // Sidebar Toggle Logic
+        const toggleBtn = $('.sidebar-toggle-btn');
+        const sidebar = $('.sidebar-column');
+        const overlay = $('.sidebar-overlay');
+        const body = $('body');
+
+        function toggleSidebar() {
+            sidebar.toggleClass('active');
+            overlay.toggleClass('active');
+            body.toggleClass('sidebar-open');
+        }
+
+        toggleBtn.on('click', toggleSidebar);
+        overlay.on('click', toggleSidebar);
     });
 </script>
 
