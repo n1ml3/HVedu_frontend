@@ -1005,15 +1005,7 @@ html, body {
     object-fit: cover !important;
   }
   .hero-section .col-lg-7{
-    max-height: 90px !important;
-    padding-left: 10px !important;
-    padding-top: 5px !important;
     margin-bottom: 30px !important;
-  }
-  .hero-section .col-lg-4{
-    max-height: 90px !important;
-    padding: 10px !important;
-    margin: 0px !important;
   }
 
   .hero-title {
