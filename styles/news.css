@@ -107,51 +107,45 @@ body {
 
 /* Sidebar Styling */
 .sidebar-links {
+  margin-top: 125px; 
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  /* margin-left: 63px; */
+  gap: 12px;
 }
 
 .sidebar-item {
-  gap: 20px;
   display: flex;
   align-items: center;
-  padding-top: 19px;
-  padding-bottom: 16px;
-  padding-left: 20px;
-  padding-right: 40px;
-  background-color: #fff;
-  border: 1px solid #890C25;
-  border-radius: 25px;
+  padding: 12px 20px;
+  background: #ffffff;
+  border: 1px solid #d3989c;
+  border-radius: 100px;
   text-decoration: none !important;
-  color: #890C25;
+  color: #333;
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  transition: var(--transition);
 }
 
 .sidebar-item:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-  border-color: var(--primary-color);
+  background-color: var(--primary-color, #890c25);
+  color: white;
+  border-color: var(--primary-color, #890c25);
   transform: translateX(5px);
 }
 
 .sidebar-item .icon-wrapper {
   width: 32px;
   height: 32px;
+  margin-right: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
-.sidebar-item .icon-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: var(--transition);
+.sidebar-item img {
+  max-width: 100%;
 }
 
 .sidebar-item:hover .icon-wrapper img {
@@ -203,8 +197,8 @@ body {
 /* Responsive adjustments */
 @media (max-width: 991px) {
   .sidebar-links {
-    margin-top: 50px;
-    border-radius: 4px;
+    margin-top: 40px;
+    position: static;
   }
 }
 
@@ -220,12 +214,7 @@ body {
   }
 }
 
-@media (max-width: 1025px) {
-  .sidebar-item {
-    font-family: 'Inter';
-    font-size: 16px;
-  }
-}
+/* Removed individual fixed font size to match news-detail.css */
 
 /* Mobile Sidebar Toggle Button */
 .sidebar-toggle-btn {
@@ -288,7 +277,7 @@ body {
     z-index: 1040;
     padding: 80px 20px 20px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    transition: right 0.03s ease;
+    transition: right 0.3s ease;
     overflow-y: auto;
   }
 
@@ -297,8 +286,7 @@ body {
   }
 
   .sidebar-links {
-    margin-top: 50px;
-    border-radius: 4px;
+    margin-top: 0;
   }
 }
 
