@@ -795,6 +795,7 @@ html, body {
   }
 
   .section-title-alt {
+    margin-top: 20px;
     font-family: 'Inter';
     font-size: 24px;
   }
@@ -919,6 +920,7 @@ html, body {
   }
   
   .section-title-alt{
+    margin-top: 0px !important;
     font-family: 'Inter';
     font-size: 20px !important;
     margin-bottom: 10px;
