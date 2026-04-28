@@ -428,13 +428,9 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
+  <script src="script/navbar-footer.js"></script>
   <script>
     $(document).ready(function () {
-      // Load Navbar
-      $("#navbar-placeholder").load("components/navbar.html");
-      // Load Footer
-      $("#footer-placeholder").load("components/footer.html");
-
       // Filter Tabs Interactivity
       $(".activity-tabs .pill-btn").on("click", function () {
         $(".activity-tabs .pill-btn").removeClass("active");
