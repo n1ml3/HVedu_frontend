@@ -87,7 +87,7 @@
         const prefix = isRoot ? '' : '../';
 
         // Fix images
-        $('.site-footer img').each(function() {
+        $('.site-footer img').each(function () {
             let src = $(this).attr('src');
             if (src && !src.startsWith('http') && !src.startsWith('data:')) {
                 if (!src.startsWith(prefix)) {
@@ -97,7 +97,7 @@
         });
 
         // Fix links
-        $('.site-footer a').each(function() {
+        $('.site-footer a').each(function () {
             let href = $(this).attr('href');
             if (href && !href.startsWith('http') && href !== '#' && !href.startsWith('mailto:') && !href.startsWith('tel:')) {
                 if (isRoot) {

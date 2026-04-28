@@ -47,9 +47,9 @@
         // Dynamic path resolution
         const isRoot = !window.location.pathname.includes('/pages/');
         const prefix = isRoot ? '' : '../';
-        
+
         // Fix images
-        $('.header-navbar img').each(function() {
+        $('.header-navbar img').each(function () {
             let src = $(this).attr('src');
             if (src && !src.startsWith('http')) {
                 // Ensure we don't double prefix if already fixed manually
@@ -60,7 +60,7 @@
         });
 
         // Fix links
-        $('.header-navbar .nav-link, .header-navbar .navbar-brand').each(function() {
+        $('.header-navbar .nav-link, .header-navbar .navbar-brand').each(function () {
             let href = $(this).attr('href');
             if (href && !href.startsWith('http') && href !== '#') {
                 if (isRoot) {
